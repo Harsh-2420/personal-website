@@ -6,7 +6,9 @@ import findrLogo from "../Images/findrLogo.svg";
 export const Findr = () => {
   return (
     <header className="findr">
-      <div class="container"></div>
+      <div class="container">
+        <img src={findrLogo} className="findrLogo" />
+      </div>
     </header>
   );
 };

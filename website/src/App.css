@@ -22,30 +22,33 @@ html {
   background-size: cover;
   height: 800px;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
 .findr {
   background-image: linear-gradient(to bottom, #1a5d57, #156070);
   background-size: cover;
   height: 800px;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .fixit {
   background-image: linear-gradient(to bottom, #156070, #154970);
   background-size: cover;
   height: 800px;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .container {
   margin: auto;
   position: relative;
 }
 
-.logo {
+.findrLogo {
   position: absolute;
   opacity: 0.8;
-  margin-top: 18%;
-  margin-left: -2.5%;
   width: 13%;
+  left: 35vw;
+  top: 40vh;
 }
 
 .phone {
