@@ -31,13 +31,7 @@ html {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.fixit {
-  background-image: linear-gradient(to bottom, #156070, #154970);
-  background-size: cover;
-  height: 800px;
-  position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+
 .container {
   margin: auto;
   position: relative;
@@ -60,4 +54,23 @@ html {
 
 div {
   display: block;
+}
+
+.fixit {
+  background-image: linear-gradient(to bottom, #156070, #154970);
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixit-paper {
+  margin-top: 7%;
+  width: 40%;
+  border-radius: 18px;
+  border-width: 0px;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.16),
+    0 14px 19px 0 rgba(0, 0, 0, 0.07);
 }

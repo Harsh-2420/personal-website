@@ -13,11 +13,11 @@ export const Findr = () => {
     gsap.to(".findrLogo", {
       x: -400,
       scale: 0.6,
-      duration: 2,
+      duration: 3,
       scrollTrigger: {
         trigger: ".findrLogo",
         markers: true,
-        start: "top center",
+        start: "top 600px",
         end: "bottom 150px",
         scrub: true,
       },
