@@ -10,11 +10,12 @@ export const Fixit = () => {
 
   useEffect(() => {
     gsap.to(".fixit-paper", {
-      scale: 1.4,
+      scale: 1.6,
       duration: 1,
       scrollTrigger: {
         trigger: ".fixit-paper",
         markers: true,
+        loop: true,
         start: "top 600px",
         end: "bottom 150px",
         scrub: true,
@@ -32,6 +33,7 @@ export const Fixit = () => {
           autostart
           autoplay="autoplay"
           muted="muted"
+          loop="loop"
           playsInline
           disablePictureInPicture
           type="video/mp4"
