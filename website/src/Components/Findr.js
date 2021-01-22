@@ -1,21 +1,24 @@
 import React, { useRef, useEffect, useState } from "react";
 // import { Container, Row, Col, Fade } from "react-bootstrap";
-import findrLogo from "../Images/uoft.png";
+import findrLogo from "../Images/findrLogo.svg";
 
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const Findr = () => {
+  gsap.registerPlugin(ScrollTrigger);
   const logoItem = useRef(null);
 
   useEffect(() => {
     gsap.to(".findrLogo", {
-      x: 100,
-      duration: 5,
+      x: -400,
+      scale: 0.6,
+      duration: 2,
       scrollTrigger: {
         trigger: ".findrLogo",
         markers: true,
         start: "top center",
-        end: "bottom 80px",
+        end: "bottom 150px",
         scrub: true,
       },
     });
