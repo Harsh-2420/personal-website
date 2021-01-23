@@ -10,6 +10,7 @@ import { TweenMax, Power3 } from "gsap";
 import { Jumbotron } from "./Components/Jumbotron";
 import { Findr } from "./Components/Findr";
 import { Fixit } from "./Components/Fixit";
+import { About } from "./Components/About";
 
 function App() {
   window.scrollTo(0, 0);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Jumbotron />
+      <About />
       <Findr />
       <Fixit />
     </div>

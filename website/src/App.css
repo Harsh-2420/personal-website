@@ -1,3 +1,5 @@
+/* CSS on the entire page */
+
 .App {
   text-align: center;
 }
@@ -5,6 +7,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+div {
+  display: block;
 }
 
 body,
@@ -17,6 +22,13 @@ html {
   line-height: 26px;
 }
 
+.container {
+  margin: auto;
+  position: relative;
+}
+
+/* CSS on the jumbotron */
+
 .home {
   background-image: linear-gradient(to bottom, #1c7473, #1a5d57);
   background-size: cover;
@@ -24,17 +36,28 @@ html {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
+
+/* CSS on the About page*/
+
+.rectangle {
+  position: absolute;
+  left: 33vw;
+  top: 26vh;
+  width: 200px;
+  height: 400px;
+  border-radius: 1%;
+  border: solid;
+  border-color: white;
+}
+
+/* CSS on the findr page*/
+
 .findr {
   background-image: linear-gradient(to bottom, #1a5d57, #156070);
   background-size: cover;
   height: 800px;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.container {
-  margin: auto;
-  position: relative;
 }
 
 .findrLogo {
@@ -45,16 +68,7 @@ html {
   top: 20vh;
 }
 
-.phone {
-  position: absolute;
-  opacity: 0.8;
-  margin-left: -3%;
-  width: 15%;
-}
-
-div {
-  display: block;
-}
+/* CSS on the fixit page*/
 
 .fixit {
   background-image: linear-gradient(to bottom, #156070, #154970);
