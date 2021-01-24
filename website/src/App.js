@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { TweenMax, Power3 } from "gsap";
 
-import { Jumbotron } from "./Components/Jumbotron";
+import { Jumbotron } from "./Components/Jumbo3";
 import { Findr } from "./Components/Findr";
 import { Fixit } from "./Components/Fixit";
 import { About } from "./Components/About";

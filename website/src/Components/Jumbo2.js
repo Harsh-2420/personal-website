@@ -27,22 +27,6 @@ export const Jumbotron = () => {
     //Remove initial flash
     TweenMax.to(app, 0, { css: { visibility: "visible" } });
 
-    //Images Animation
-    // tl.from(girlImage, 1.2, { y: 1280, ease: Power3.easeOut }, "Start")
-    //   .from(
-    //     girlImage.firstElementChild,
-    //     2,
-    //     { scale: 1.6, ease: Power3.easeOut },
-    //     0.2
-    //   )
-    //   .from(boyImage, 1.4, { y: 1280, ease: Power3.easeOut }, 0.2)
-    //   .from(
-    //     boyImage.firstElementChild,
-    //     2,
-    //     { scale: 1.6, ease: Power3.easeOut },
-    //     0.2
-    //   );
-
     //Content Animation
     tl.staggerFrom(
       [headlineFirst.children, headlineSecond.children],
@@ -72,9 +56,6 @@ export const Jumbotron = () => {
                 <div className="hero-content-line">
                   <div className="hero-content-line-inner">JHUNJHUNWALA</div>
                 </div>
-                {/* <div className="hero-content-line">
-                  <div className="hero-content-line-inner">by behaviors.</div>
-                </div> */}
               </h1>
               <p>Entrepreneur | Aspiring Data Scientist</p>
               <div className="btn-row">
@@ -87,16 +68,6 @@ export const Jumbotron = () => {
               </div>
             </div>
           </div>
-          {/* <div className="hero-images">
-            <div ref={(el) => (images = el)} className="hero-images-inner">
-              <div className="hero-image girl">
-                <img src={imgGirl} alt="girl" />
-              </div>
-              <div className="hero-image boy">
-                <img src={imgBoy} alt="boy" />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

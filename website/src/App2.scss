@@ -1,0 +1,49 @@
+.body {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-weight: 300;
+  font-size: 13px;
+  color: #303030;
+  line-height: 26px;
+}
+
+.hero {
+  //   visibility: hidden;
+  height: 111vh;
+  .container {
+    width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+
+    .name {
+      font-weight: 300;
+      font-size: 80px;
+      color: #303030;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: bold;
+      .name-1 {
+        position: absolute;
+        top: 87.5vh;
+        left: 12vw;
+      }
+      .name-2 {
+        position: absolute;
+        top: 97.5vh;
+        left: 11.5vw;
+      }
+      .name-3 {
+        position: absolute;
+        top: 107.5vh;
+        left: 12vw;
+        z-index: 2;
+      }
+    }
+
+    .title {
+      position: absolute;
+      top: 20.5vh;
+      left: 12vw;
+    }
+  }
+}
