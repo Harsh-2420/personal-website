@@ -39,17 +39,49 @@ html {
 
 /* CSS on the About page*/
 
+.about {
+  background-image: linear-gradient(to bottom, #1c7473, #1a5d57);
+  background-size: cover;
+  height: 150vh;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+}
+
 .rectangle {
   position: absolute;
   left: 33vw;
-  top: 26vh;
+  top: 40vh;
   width: 200px;
-  height: 400px;
+  height: 100px;
   border-radius: 1%;
   border: solid;
   border-color: white;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   transform-origin: 20% 40%;
+}
+
+.line1 {
+  width: 600px;
+  height: 55px;
+  position: absolute;
+  left: 21vw;
+  top: 57vh;
+  border-bottom: 1px solid black;
+  position: absolute;
+  transform: rotate(90deg);
+  opacity: 70%;
+}
+
+.line2 {
+  width: 600px;
+  height: 55px;
+  position: absolute;
+  left: 21vw;
+  top: 57vh;
+  border-bottom: 1px solid black;
+  position: absolute;
+  transform: rotate(90deg);
+  opacity: 70%;
 }
 
 /* CSS on the findr page*/

@@ -11,7 +11,7 @@ export const About = () => {
 
   useEffect(() => {
     gsap.to(".rectangle", {
-      scaleY: 1.6,
+      scaleY: 2,
       duration: 0.2,
       scrollTrigger: {
         trigger: ".rectangle",
@@ -24,9 +24,11 @@ export const About = () => {
   }, []);
 
   return (
-    <header className="findr">
+    <header className="about">
       <div class="container">
-        <div ref={rectangle} class="rectangle"></div>
+        <div ref={rectangle} className="rectangle"></div>
+        <div className="line1"></div>
+        <div className="line2"></div>
       </div>
     </header>
   );
