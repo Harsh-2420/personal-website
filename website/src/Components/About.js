@@ -12,13 +12,13 @@ export const About = () => {
   useEffect(() => {
     gsap.to(".rectangle", {
       scaleY: 1.6,
-      duration: 0.1,
+      duration: 0.2,
       scrollTrigger: {
         trigger: ".rectangle",
         markers: true,
-        start: "top 600px",
+        start: "center 600px",
         end: "bottom 150px",
-        toggleActions: "restart none none reset",
+        toggleActions: "restart none none reverse",
       },
     });
   }, []);
