@@ -11,15 +11,14 @@ export const About = () => {
 
   useEffect(() => {
     gsap.to(".rectangle", {
-      //   scale: 0.6,
-      transformOrigin: "50% bottom",
-      duration: 1,
+      scaleY: 1.6,
+      duration: 0.1,
       scrollTrigger: {
         trigger: ".rectangle",
         markers: true,
         start: "top 600px",
         end: "bottom 150px",
-        // scrub: true,
+        toggleActions: "restart none none reset",
       },
     });
   }, []);

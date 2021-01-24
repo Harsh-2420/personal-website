@@ -48,6 +48,8 @@ html {
   border-radius: 1%;
   border: solid;
   border-color: white;
+  transform: rotate(90deg);
+  transform-origin: 20% 40%;
 }
 
 /* CSS on the findr page*/
