@@ -83,19 +83,19 @@ html {
   font-weight: 400;
   position: relative;
   top: 30vh;
-  left: 25vw;
+  left: 18vw;
   /* margin-bottom: 35px; */
   text-transform: uppercase;
 }
 
 .about-desc {
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-family: "Sarabun", sans-serif;
   color: white;
   font-weight: 400;
   position: relative;
   top: 35vh;
-  left: 25vw;
+  left: 18vw;
   /* margin-bottom: 35px; */
   /* text-transform: uppercase; */
 }
