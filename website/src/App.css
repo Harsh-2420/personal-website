@@ -27,6 +27,11 @@ html {
   position: relative;
 }
 
+/* CSS on the navbar */
+.active {
+  color: #fcfcfc;
+}
+
 /* CSS on the jumbotron */
 
 .home {
@@ -40,14 +45,30 @@ html {
 /* CSS on the About page*/
 
 .about {
-  background-image: linear-gradient(to bottom, #1c7473, #1a5d57);
+  background: rgb(22, 25, 26);
   background-size: cover;
   height: 150vh;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
 
-.rectangle {
+.side-head {
+  font-size: 8.125rem;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  left: 0px;
+}
+
+/* .rectangle {
   position: absolute;
   left: 33vw;
   top: 40vh;
@@ -56,11 +77,10 @@ html {
   border-radius: 1%;
   border: solid;
   border-color: white;
-  /* transform: rotate(90deg); */
-  transform-origin: 20% 40%;
-}
+  /* transform: rotate(90deg);
+} */
 
-.line1 {
+/* .line1 {
   width: 600px;
   height: 55px;
   position: absolute;
@@ -70,8 +90,8 @@ html {
   position: absolute;
   transform: rotate(90deg);
   opacity: 70%;
-}
-
+} */
+/* 
 .line2 {
   width: 600px;
   height: 55px;
@@ -82,7 +102,7 @@ html {
   position: absolute;
   transform: rotate(90deg);
   opacity: 70%;
-}
+} */
 
 /* CSS on the findr page*/
 

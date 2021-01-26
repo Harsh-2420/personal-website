@@ -26,9 +26,11 @@ export const About = () => {
   return (
     <header className="about">
       <div class="container">
-        <div ref={rectangle} className="rectangle"></div>
+        {/* <div ref={rectangle} className="rectangle"></div>
         <div className="line1"></div>
-        <div className="line2"></div>
+        <div className="line2"></div> */}
+        <div class="side-head">ABOUT</div>
+        <div class="side-head">ABOUT</div>
       </div>
     </header>
   );

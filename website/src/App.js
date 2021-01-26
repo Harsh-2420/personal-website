@@ -11,12 +11,14 @@ import { Jumbotron } from "./Components/Jumbo3";
 import { Findr } from "./Components/Findr";
 import { Fixit } from "./Components/Fixit";
 import { About } from "./Components/About";
+import { Navbar } from "./Components/Navbar";
 
 function App() {
   window.scrollTo(0, 0);
 
   return (
     <div className="App">
+      {/* <Navbar /> */}
       <Jumbotron />
       <About />
       <Findr />
