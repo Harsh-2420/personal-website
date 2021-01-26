@@ -25,6 +25,7 @@ html {
 .container {
   margin: auto;
   position: relative;
+  /* border: solid 2px greenyellow; */
 }
 
 /* CSS on the navbar */
@@ -91,19 +92,37 @@ html {
 
 .findr {
   background: rgb(22, 25, 26);
+  /* border: 2px white solid; */
   background-size: cover;
   height: 800px;
   position: relative;
 }
 
-.findrLogo {
+.container-findr {
+  display: flex;
   position: relative;
-  opacity: 0.8;
-  width: 40%;
+  /* border: solid 2px green; */
+  align-items: center;
 }
 
+.findrLogo {
+  opacity: 0.8;
+  width: 40%;
+  /* border: solid 2px magenta; */
+  /* left: 40vw; */
+  margin-left: 30vw;
+}
 .findr-content-line {
   color: white;
+  opacity: 0;
+  display: flex;
+  text-align: left;
+  /* position: absolute; */
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-family: "Sarabun", sans-serif;
+  /* border: solid 2px teal; */
+  /* bottom: 12vw; */
 }
 
 /* CSS on the fixit page*/

@@ -1,9 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 // import { Container, Row, Col, Fade } from "react-bootstrap";
 import findrLogo from "../Images/findrLogo.svg";
-
+import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import $ from "jquery";
 
 export const Findr = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -12,9 +13,30 @@ export const Findr = () => {
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
-    // content vars
-    const headlineFirst = content.children[0].children[0];
-    const headlineSecond = headlineFirst.nextSibling;
+    $(window).on("load", function () {
+      $(window)
+        .scroll(function () {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          $(".findr-content-line").each(function () {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) {
+              //object comes into view (scrolling down)
+              if ($(this).css("opacity") == 0) {
+                $(this).fadeTo(500, 1);
+              }
+            } else {
+              //object goes out of view (scrolling up)
+              if ($(this).css("opacity") == 1) {
+                $(this).fadeTo(500, 0);
+              }
+            }
+          });
+        })
+        .scroll(); //invoke scroll-handler on page-load
+    });
 
     gsap.to(".findrLogo", {
       x: -400,
@@ -28,27 +50,49 @@ export const Findr = () => {
         scrub: true,
       },
     });
+
+    gsap.to(".findr-content-inner", {
+      x: -300,
+      duration: 1,
+      // autoAlpha: 1,
+      scrollTrigger: {
+        trigger: ".findrLogo",
+        markers: true,
+        // start: "top 600px",
+        // end: "bottom 150px",
+        scrub: true,
+      },
+    });
   }, []);
 
   return (
     <header className="findr">
-      <div className="container">
+      <div className="container-findr">
         <img ref={logoItem} src={findrLogo} className="findrLogo" />
-        <div className="findr-content">
-          <div className="findr-content-inner" ref={(el) => (content = el)}>
-            <h1>
-              <div className="findr-content-line">
-                <div className="findr-content-line-inner">
-                  - developed a mobile application that helps students find
-                  study partners for courses, hackathons and competitions.
-                </div>
-              </div>
-              <div className="findr-content-line">
-                <div className="findr-content-line-inner">- JHUNJHUNWALA</div>
-              </div>
-            </h1>
+        {/* <Col md={4}></Col>
+        <Col md={8}> */}
+        <div className="findr-content-inner" ref={(el) => (content = el)}>
+          <div className="findr-content-line">
+            <ul>
+              <li>
+                developed a mobile application that helps students find study
+                partners for courses,
+                <br></br>hackathons and competitions.
+              </li>
+              <li>
+                developed a mobile application that helps students find study
+                partners for courses,
+                <br></br>hackathons and competitions.
+              </li>
+              <li>
+                developed a mobile application that helps students find study
+                partners for courses,
+                <br></br>hackathons and competitions.
+              </li>
+            </ul>
           </div>
         </div>
+        {/* </Col> */}
       </div>
     </header>
   );
