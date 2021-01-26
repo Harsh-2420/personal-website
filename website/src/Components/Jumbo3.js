@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import "../App3.scss";
+import "../App2.scss";
 import { TimelineLite, TweenMax, Power3 } from "gsap";
 import $ from "jquery";
+import Chart from "chart.js";
 
 export const Jumbotron = () => {
   return (
