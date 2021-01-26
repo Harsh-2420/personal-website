@@ -39,7 +39,6 @@ html {
   background-size: cover;
   height: 800px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
 
 /* CSS on the About page*/
@@ -49,7 +48,6 @@ html {
   background-size: cover;
   height: 100vh;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
 
 .side-head {
@@ -67,14 +65,6 @@ html {
   z-index: 1;
   left: 0px;
 }
-/* 
-.container-inner {
-  position: relative;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 .about-title {
   font-size: 2.5rem;
@@ -84,7 +74,6 @@ html {
   position: relative;
   top: 30vh;
   left: 18vw;
-  /* margin-bottom: 35px; */
   text-transform: uppercase;
 }
 
@@ -96,72 +85,34 @@ html {
   position: relative;
   top: 35vh;
   left: 18vw;
-  /* margin-bottom: 35px; */
-  /* text-transform: uppercase; */
 }
-
-/* .rectangle {
-  position: absolute;
-  left: 33vw;
-  top: 40vh;
-  width: 200px;
-  height: 100px;
-  border-radius: 1%;
-  border: solid;
-  border-color: white;
-  /* transform: rotate(90deg);
-} */
-
-/* .line1 {
-  width: 600px;
-  height: 55px;
-  position: absolute;
-  left: 21vw;
-  top: 57vh;
-  border-bottom: 1px solid black;
-  position: absolute;
-  transform: rotate(90deg);
-  opacity: 70%;
-} */
-/* 
-.line2 {
-  width: 600px;
-  height: 55px;
-  position: absolute;
-  left: 21vw;
-  top: 57vh;
-  border-bottom: 1px solid black;
-  position: absolute;
-  transform: rotate(90deg);
-  opacity: 70%;
-} */
 
 /* CSS on the findr page*/
 
 .findr {
-  background-image: linear-gradient(to bottom, #1a5d57, #156070);
+  background: rgb(22, 25, 26);
   background-size: cover;
   height: 800px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .findrLogo {
-  position: absolute;
+  position: relative;
   opacity: 0.8;
   width: 40%;
-  left: 25vw;
-  top: 20vh;
+}
+
+.findr-content-line {
+  color: white;
 }
 
 /* CSS on the fixit page*/
 
 .fixit {
-  background-image: linear-gradient(to bottom, #156070, #154970);
+  background: rgb(22, 25, 26);
   background-size: cover;
   height: 800px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .fixit-paper {

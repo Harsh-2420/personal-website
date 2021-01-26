@@ -72,9 +72,6 @@ export const Jumbotron = () => {
                 <div className="hero-content-line">
                   <div className="hero-content-line-inner">JHUNJHUNWALA</div>
                 </div>
-                {/* <div className="hero-content-line">
-                  <div className="hero-content-line-inner">by behaviors.</div>
-                </div> */}
               </h1>
               <p>Entrepreneur | Aspiring Data Scientist</p>
               <div className="btn-row">
