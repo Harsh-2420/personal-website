@@ -27,14 +27,19 @@ export const About = () => {
   return (
     <header className="about">
       <div class="container">
-        {/* <div class="side-head">ABOUT</div>
+        <Col md={4}>
+          {/* <div class="side-head">ABOUT</div>
         <div class="side-head-2">ABOUT</div> */}
-        <div class="container-inner">
-          <div class="about-title">Who am I</div>
-          <div class="about-desc">
-            I'm an entrepreneur, a tech head and aspiring Data Scientist
+        </Col>
+        <Col md={4}>
+          <div class="container-inner">
+            <div class="about-title">Who am I</div>
+            <div class="about-desc">
+              I'm an entrepreneur, a tech head and an aspiring Data Scientist
+            </div>
           </div>
-        </div>
+        </Col>
+        <Col md={4}></Col>
       </div>
     </header>
   );
