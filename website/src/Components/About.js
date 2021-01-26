@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 // import { Container, Row, Col, Fade } from "react-bootstrap";
 import findrLogo from "../Images/findrLogo.svg";
+import { Row, Col } from "react-bootstrap";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -26,11 +27,14 @@ export const About = () => {
   return (
     <header className="about">
       <div class="container">
-        {/* <div ref={rectangle} className="rectangle"></div>
-        <div className="line1"></div>
-        <div className="line2"></div> */}
-        <div class="side-head">ABOUT</div>
-        <div class="side-head">ABOUT</div>
+        {/* <div class="side-head">ABOUT</div>
+        <div class="side-head-2">ABOUT</div> */}
+        <div class="container-inner">
+          <div class="about-title">Who am I</div>
+          <div class="about-desc">
+            I'm an entrepreneur, a tech head and aspiring Data Scientist
+          </div>
+        </div>
       </div>
     </header>
   );

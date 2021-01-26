@@ -47,7 +47,7 @@ html {
 .about {
   background: rgb(22, 25, 26);
   background-size: cover;
-  height: 150vh;
+  height: 100vh;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.01);
 }
@@ -66,6 +66,38 @@ html {
   white-space: nowrap;
   z-index: 1;
   left: 0px;
+}
+/* 
+.container-inner {
+  position: relative;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+.about-title {
+  font-size: 2.5rem;
+  font-family: "Anton", sans-serif;
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  top: 30vh;
+  left: 35vw;
+  /* margin-bottom: 35px; */
+  text-transform: uppercase;
+}
+
+.about-desc {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  top: 40vh;
+  left: 21vw;
+  /* margin-bottom: 35px; */
+  /* text-transform: uppercase; */
 }
 
 /* .rectangle {
