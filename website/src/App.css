@@ -60,11 +60,27 @@ html {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   position: absolute;
-  top: 50vh;
+  top: 70vh;
+  z-index: 10;
+  left: 94vw;
   transform: translateY(-50%);
   white-space: nowrap;
   z-index: 1;
-  left: 0px;
+}
+.side-head-2 {
+  font-size: 8.125rem;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  top: 70vh;
+  margin-left: -6vw;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .about-title {
@@ -177,5 +193,13 @@ html {
   width: 40%;
   /* border: solid 2px magenta; */
   /* left: 40vw; */
-  margin-left: 30vw;
+  margin-left: -10vw;
+  /* margin-top: 7%; */
+  width: 37%;
+  border-radius: 18px;
+  border-width: 0px;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.16),
+    0 14px 19px 0 rgba(0, 0, 0, 0.07);
 }

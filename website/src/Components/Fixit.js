@@ -69,7 +69,8 @@
 // };
 
 import React, { useRef, useEffect, useState } from "react";
-import fixitVideo from "../Images/findrLogo.svg";
+// import fixitVideo from "../Images/findrLogo.svg";
+import fixitVideo from "../Images/res-paper-vid.mp4";
 import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -108,7 +109,7 @@ export const Fixit = () => {
     });
 
     gsap.to(".fixitVideo", {
-      x: -400,
+      x: 400,
       scale: 0.6,
       duration: 3,
       scrollTrigger: {
@@ -121,7 +122,7 @@ export const Fixit = () => {
     });
 
     gsap.to(".fixit-content-inner", {
-      x: -300,
+      x: 200,
       duration: 1,
       // autoAlpha: 1,
       scrollTrigger: {
@@ -137,7 +138,6 @@ export const Fixit = () => {
   return (
     <header className="fixit">
       <div className="container-fixit">
-        <img ref={videoItem} src={fixitVideo} className="fixitVideo" />
         <div className="fixit-content-inner" ref={(el) => (content = el)}>
           <div className="fixit-content-line">
             <ul>
@@ -159,6 +159,19 @@ export const Fixit = () => {
             </ul>
           </div>
         </div>
+        <video
+          ref={videoItem}
+          src={fixitVideo}
+          className="fixitVideo"
+          autostart
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+          playsInline
+          disablePictureInPicture
+          type="video/mp4"
+          // style={{ border: "2px solid teal" }}
+        />
       </div>
     </header>
   );

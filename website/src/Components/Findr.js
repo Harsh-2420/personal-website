@@ -90,6 +90,8 @@ export const Findr = () => {
             </ul>
           </div>
         </div>
+        <div class="side-head">EXPERIENCE</div>
+        <div class="side-head-2">EXPERIENCE</div>
       </div>
     </header>
   );

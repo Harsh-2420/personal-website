@@ -27,10 +27,7 @@ export const About = () => {
   return (
     <header className="about">
       <div class="container">
-        <Col md={3}>
-          {/* <div class="side-head">ABOUT</div>
-        <div class="side-head-2">ABOUT</div> */}
-        </Col>
+        <Col md={3}></Col>
         <Col md={6}>
           <div class="container-inner">
             <div class="about-title">Who am I</div>
