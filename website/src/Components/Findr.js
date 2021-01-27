@@ -54,13 +54,27 @@ export const Findr = () => {
     gsap.to(".findr-content-inner", {
       x: -300,
       duration: 1,
-      // autoAlpha: 1,
       scrollTrigger: {
         trigger: ".findrLogo",
         markers: true,
-        // start: "top 600px",
-        // end: "bottom 150px",
         scrub: true,
+      },
+    });
+
+    gsap.from(".side-head", {
+      x: 300,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: ".side-head",
+        toggleActions: "play none none none",
+      },
+    });
+    gsap.from(".side-head-2", {
+      x: -300,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: ".side-head",
+        toggleActions: "play none none none",
       },
     });
   }, []);
