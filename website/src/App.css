@@ -42,6 +42,11 @@ html {
   position: relative;
 }
 
+.JIcon {
+  width: 10%;
+  margin-top: 20%;
+}
+
 /* CSS on the About page*/
 
 .about {
