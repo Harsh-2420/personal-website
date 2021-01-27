@@ -12,10 +12,16 @@ div {
   display: block;
 }
 
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("./fonts/HKGrotesk-Regular.otf") format("opentype");
+}
+
 body,
 html {
-  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco,
-    "Bitstream Vera Sans Mono", monospace !important;
+  /* font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco,
+    "Bitstream Vera Sans Mono", monospace !important; */
+  font-family: "HKGrotesk" !important;
   font-weight: 300;
   font-size: 13px;
   color: #303030;
@@ -25,7 +31,6 @@ html {
 .container {
   margin: auto;
   position: relative;
-  /* border: solid 2px greenyellow; */
 }
 
 /* CSS on the navbar */
@@ -100,7 +105,6 @@ html {
 
 .about-desc {
   font-size: 1.2rem;
-  font-family: "Sarabun", sans-serif;
   color: white;
   font-weight: 400;
   position: relative;
@@ -140,7 +144,6 @@ html {
   text-align: left;
   flex-wrap: wrap;
   font-size: 1.2rem;
-  font-family: "Sarabun", sans-serif;
 }
 
 /* CSS on the fixit page*/
@@ -191,39 +194,30 @@ html {
 
 /* CSS on the other proj page*/
 
-.proj-title {
+.all-proj-title {
   font-size: 2.5rem;
   font-family: "Anton", sans-serif;
   color: white;
   font-weight: 400;
-  position: relative;
-  top: 30vh;
-  left: 18vw;
+  text-transform: uppercase;
+}
+.project-container {
+  width: 30%;
+  /* border: red 2px solid; */
+}
+.project-header {
+  font-size: 2.5rem;
+  font-family: "Anton", sans-serif;
+  /* border: blue 2px solid; */
+  color: rgb(105, 164, 184);
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-.project-1 {
-  font-size: 2.5rem;
-  font-family: "Anton", sans-serif;
-  color: rgb(105, 164, 184);
+.project-desc {
+  font-size: 1.2rem;
+  /* border: purple 2px solid; */
+  color: white;
   font-weight: 400;
-  /* position: relative; */
-  /* top: 30vh; */
-  /* left: 18vw;  */
-  margin-top: 40vh;
-  margin-left: -10vw;
-  text-transform: uppercase;
-}
-
-.project-2 {
-  font-size: 2.5rem;
-  font-family: "Anton", sans-serif;
-  color: rgb(105, 164, 184);
-  font-weight: 400;
-  /* position: relative; */
-  /* top: 30vh;
-  left: 18vw; */
-  margin-top: 40vh;
-  margin-left: 10vw;
-  text-transform: uppercase;
+  text-align: left;
 }
