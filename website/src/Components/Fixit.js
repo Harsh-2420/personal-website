@@ -43,7 +43,7 @@ export const Fixit = () => {
       duration: 3,
       scrollTrigger: {
         trigger: ".fixitVideo",
-        markers: true,
+        // markers: true,
         start: "top 600px",
         end: "bottom 150px",
         scrub: true,
@@ -56,7 +56,7 @@ export const Fixit = () => {
       // autoAlpha: 1,
       scrollTrigger: {
         trigger: ".fixitVideo",
-        markers: true,
+        // markers: true,
         // start: "top 600px",
         // end: "bottom 150px",
         scrub: true,

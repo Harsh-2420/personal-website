@@ -44,7 +44,7 @@ export const Findr = () => {
       duration: 3,
       scrollTrigger: {
         trigger: ".findrLogo",
-        markers: true,
+        // markers: true,
         start: "top 600px",
         end: "bottom 150px",
         scrub: true,
@@ -56,7 +56,7 @@ export const Findr = () => {
       duration: 1,
       scrollTrigger: {
         trigger: ".findrLogo",
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     });

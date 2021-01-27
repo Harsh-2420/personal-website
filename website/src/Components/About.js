@@ -3,26 +3,39 @@ import React, { useRef, useEffect, useState } from "react";
 import findrLogo from "../Images/findrLogo.svg";
 import { Row, Col } from "react-bootstrap";
 
-import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, TweenMax, TimelineLite, Power3 } from "gsap";
 
 export const About = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const rectangle = useRef(null);
+  let content = useRef(null);
+  let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
-    gsap.to(".rectangle", {
-      scaleY: 2,
-      duration: 0.2,
+    gsap.from(".about-title", {
+      y: 44,
+      duration: 1,
       scrollTrigger: {
-        trigger: ".rectangle",
-        markers: true,
+        trigger: ".about-title",
         start: "center 600px",
-        end: "bottom 150px",
-        toggleActions: "restart none none reverse",
+        toggleActions: "play none none none",
       },
+      ease: Power3.easeOut,
+      opacity: 0,
     });
-  }, []);
+    gsap.from(".about-desc", {
+      y: 44,
+      duration: 1,
+      delay: 0.5,
+      scrollTrigger: {
+        trigger: ".about-title",
+        start: "bottom 600px",
+        toggleActions: "play none none none",
+      },
+      ease: Power3.easeOut,
+      opacity: 0,
+    });
+  }, [tl]);
 
   return (
     <header className="about">
@@ -33,11 +46,10 @@ export const About = () => {
             <div class="about-title">Who am I</div>
             <div class="about-desc">
               I'm an entrepreneur, a tech head and an aspiring Data Scientist
-              <br />- <br />I love having control - I mean who doesn't - but
-              what I mean is having control over the process. This website for
-              example - I control the design and the architecture. For my
-              projects, I try to streamline the process to make the different
-              teams work in tandem.
+              <br />- <br />I love having control (I mean who doesn't). This
+              website for example - I control the design and the architecture.
+              For my projects, I try to streamline the process to make the
+              different teams work in tandem.
               <br />
               This is what draws me towards data. Working with big data provides
               the kind of control I like. The feeling of being overwhelmed by
