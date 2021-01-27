@@ -1,22 +1,25 @@
 import React, { useRef, useEffect, useState } from "react";
 import uoftLogo from "../Images/uoft.png";
 import paper from "../Images/res-paper-vid.mp4";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, TimelineLite, TweenMax, Power3 } from "gsap";
 
-// intro = fixit & video = fixit-paper
 export const Fixit = () => {
   const videoRef = useRef(null);
+  const tl1 = gsap.timeline({ delay: 0.8 });
+  const tl2 = gsap.timeline({ paused: true });
+  // let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
-    gsap.to(".fixit-paper", {
-      scale: 1.6,
+    tl2.to(".fixit-paper", {
       duration: 1,
+      scale: 0.7,
+      x: -400,
+      ease: "expo.inOut",
       scrollTrigger: {
         trigger: ".fixit-paper",
         markers: true,
         loop: true,
-        start: "top 600px",
+        start: "top 800px",
         end: "bottom 150px",
         scrub: true,
       },

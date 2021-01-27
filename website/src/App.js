@@ -12,6 +12,7 @@ import { Findr } from "./Components/Findr";
 import { Fixit } from "./Components/Fixit";
 import { About } from "./Components/About";
 import { Navbar } from "./Components/Navbar";
+import { Projects } from "./Components/Projects";
 
 function App() {
   window.scrollTo(0, 0);
@@ -23,6 +24,7 @@ function App() {
       <About />
       <Findr />
       <Fixit />
+      <Projects />
     </div>
   );
 }
