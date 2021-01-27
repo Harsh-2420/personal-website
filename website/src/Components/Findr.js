@@ -69,8 +69,6 @@ export const Findr = () => {
     <header className="findr">
       <div className="container-findr">
         <img ref={logoItem} src={findrLogo} className="findrLogo" />
-        {/* <Col md={4}></Col>
-        <Col md={8}> */}
         <div className="findr-content-inner" ref={(el) => (content = el)}>
           <div className="findr-content-line">
             <ul>
@@ -92,7 +90,6 @@ export const Findr = () => {
             </ul>
           </div>
         </div>
-        {/* </Col> */}
       </div>
     </header>
   );
