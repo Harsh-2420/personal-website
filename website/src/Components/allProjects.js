@@ -15,11 +15,10 @@ export const Projects = () => {
     >
       <div
         className="container"
-        style={
-          {
-            // border: "white 2px solid",
-          }
-        }
+        style={{
+          // border: "white 2px solid",
+          top: "10vh",
+        }}
       >
         <div
           className="all-proj-title"
@@ -29,20 +28,24 @@ export const Projects = () => {
         </div>
         <div
           className="projects-container"
-          style={{
-            border: "magenta 2px solid",
-            display: "flex",
-            flexWrap: "wrap",
-            width: "1100px",
-            alignSelf: "center",
-          }}
+          // style={{ border: "magenta 2px solid" }}
         >
-          <Codify />
-          <Dathena />
-          <Dathena />
-          <Dathena />
-          <Dathena />
-          <Dathena />
+          <Row>
+            <Col>
+              <Codify />
+            </Col>
+            <Col>
+              <Dathena />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Dathena />
+            </Col>
+            <Col>
+              <Dathena />
+            </Col>
+          </Row>
         </div>
       </div>
     </header>
