@@ -10,14 +10,16 @@ import { Dathena } from "./Projects/Dathena";
 export const Projects = () => {
   return (
     <header
-      className="about"
+      className="project-page"
       // style={{ border: "purple 2px solid" }}
     >
+      <div className="side-head"> PROJECTS</div>
+      <div className="side-head-2">PROJECTS</div>
       <div
         className="container"
         style={{
           // border: "white 2px solid",
-          top: "10vh",
+          top: "30vh",
         }}
       >
         <div
@@ -34,6 +36,7 @@ export const Projects = () => {
             <Col>
               <Codify />
             </Col>
+            {/* <div className="vertical-line"></div> */}
             <Col>
               <Dathena />
             </Col>
