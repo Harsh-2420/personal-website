@@ -14,18 +14,18 @@ export const About = () => {
   useEffect(() => {
     gsap.from(".about-title", {
       y: 44,
-      duration: 1,
+      duration: 1.5,
       scrollTrigger: {
         trigger: ".about-title",
         start: "center 600px",
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0,
+      opacity: 0.2,
     });
     gsap.from(".about-desc", {
       y: 44,
-      duration: 1,
+      duration: 1.5,
       delay: 0.5,
       scrollTrigger: {
         trigger: ".about-title",
@@ -33,7 +33,7 @@ export const About = () => {
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0,
+      opacity: 0.2,
     });
   }, [tl]);
 

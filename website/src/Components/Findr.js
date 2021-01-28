@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 // import { Container, Row, Col, Fade } from "react-bootstrap";
 import findrLogo from "../Images/findrLogo.svg";
 import { Row, Col } from "react-bootstrap";
-import { gsap, TweenMax, TimelineLite } from "gsap";
+import { gsap, TweenMax, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 import { Codify } from "./Projects/Codify";
@@ -45,11 +45,11 @@ export const Findr = () => {
       duration: 3,
       scrollTrigger: {
         trigger: ".findrLogo",
-        // markers: true,
         start: "top 600px",
         end: "bottom 150px",
         scrub: true,
       },
+      ease: Power3.easeOut,
     });
 
     gsap.to(".findr-content-inner", {
@@ -57,26 +57,32 @@ export const Findr = () => {
       duration: 1,
       scrollTrigger: {
         trigger: ".findrLogo",
-        // markers: true,
         scrub: true,
       },
+      ease: Power3.easeOut,
     });
 
     gsap.from(".side-head", {
-      x: 300,
-      duration: 1.5,
+      x: 54,
+      duration: 1.3,
       scrollTrigger: {
         trigger: ".side-head",
+        start: "center 600px",
         toggleActions: "play none none none",
       },
+      ease: Power3.easeOut,
+      opacity: 0.2,
     });
     gsap.from(".side-head-2", {
-      x: -300,
-      duration: 1.5,
+      x: -54,
+      duration: 1.3,
       scrollTrigger: {
         trigger: ".side-head",
+        start: "center 600px",
         toggleActions: "play none none none",
       },
+      ease: Power3.easeOut,
+      opacity: 0.2,
     });
   }, []);
 

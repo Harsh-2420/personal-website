@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import fixitVideo from "../Images/res-paper-vid.mp4";
 import { Row, Col } from "react-bootstrap";
-import { gsap, TweenMax, TimelineLite } from "gsap";
+import { gsap, TweenMax, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Codify } from "./Projects/Codify";
 import $ from "jquery";
@@ -49,19 +49,18 @@ export const Fixit = () => {
         end: "bottom 150px",
         scrub: true,
       },
+      ease: Power3.easeOut,
     });
 
     gsap.to(".fixit-content-inner", {
       x: 200,
       duration: 1,
-      // autoAlpha: 1,
       scrollTrigger: {
         trigger: ".fixitVideo",
-        // markers: true,
-        // start: "top 600px",
-        // end: "bottom 150px",
+        start: "top 600px",
         scrub: true,
       },
+      ease: Power3.easeOut,
     });
   }, []);
 
