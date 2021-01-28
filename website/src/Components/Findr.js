@@ -5,6 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
+import { Codify } from "./Projects/Codify";
 
 export const Findr = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -85,23 +86,7 @@ export const Findr = () => {
         <img ref={logoItem} src={findrLogo} className="findrLogo" />
         <div className="findr-content-inner" ref={(el) => (content = el)}>
           <div className="findr-content-line">
-            <ul>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-            </ul>
+            <Codify />
           </div>
         </div>
         <div class="side-head">EXPERIENCE</div>

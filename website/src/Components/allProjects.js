@@ -36,7 +36,6 @@ export const Projects = () => {
             <Col>
               <Codify />
             </Col>
-            {/* <div className="vertical-line"></div> */}
             <Col>
               <Dathena />
             </Col>

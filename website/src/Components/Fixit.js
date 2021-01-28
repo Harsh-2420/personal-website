@@ -3,6 +3,7 @@ import fixitVideo from "../Images/res-paper-vid.mp4";
 import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Codify } from "./Projects/Codify";
 import $ from "jquery";
 
 export const Fixit = () => {
@@ -69,23 +70,7 @@ export const Fixit = () => {
       <div className="container-fixit">
         <div className="fixit-content-inner" ref={(el) => (content = el)}>
           <div className="fixit-content-line">
-            <ul>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-              <li>
-                developed a mobile application that helps students find study
-                partners for courses,
-                <br></br>hackathons and competitions.
-              </li>
-            </ul>
+            <Codify />
           </div>
         </div>
         <video
