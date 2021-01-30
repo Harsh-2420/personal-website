@@ -4,15 +4,14 @@ import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 
-export const Dathena = () => {
+export const Charlottesville = () => {
   return (
     <div className="project-container">
-      <div className="project-header">DATHENA</div>
+      <div className="project-header">Charlottesville</div>
       <div className="project-desc">
-        Partnered with Scotiabank and U of T to use financial big data for
-        feature selection and predicting ratings. Implemented Principal
-        Component Analysis for dimensionality reduction along with random forest
-        and GAM
+        Analyzed data from all tweets over 4 days to perform Natural Language
+        Processing with sentiment analysis. Utilized NLTK and tokenizing to
+        break down the tweets and perform data visualization.
       </div>
     </div>
   );

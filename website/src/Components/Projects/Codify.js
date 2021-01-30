@@ -9,10 +9,10 @@ export const Codify = () => {
     <div className="project-container">
       <div className="project-header">CODIFY</div>
       <div className="project-desc">
-        "An algorithm that can read and grade papers for CS1 courses using CNN
+        An algorithm that can read and grade papers for CS1 courses using CNN
         and RNN The image recognition model uses CNN to read the handwritten
         code The RNN integrated with IntelliSense rectifies mistakes made by
-        then CNN"
+        then CNN
       </div>
     </div>
   );

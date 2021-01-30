@@ -3,7 +3,7 @@ import fixitVideo from "../Images/res-paper-vid.mp4";
 import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Codify } from "./Projects/Codify";
+import { FixitProj } from "./Projects/Fixit";
 import $ from "jquery";
 
 export const Fixit = () => {
@@ -13,6 +13,10 @@ export const Fixit = () => {
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
+    $(".fixitVideo").click(function () {
+      window.location =
+        "https://cssplice.github.io/LAS20/proc/SPLICE_2020_LS_paper_2.pdf";
+    });
     $(window).on("load", function () {
       $(window)
         .scroll(function () {
@@ -69,9 +73,10 @@ export const Fixit = () => {
       <div className="container-fixit">
         <div className="fixit-content-inner" ref={(el) => (content = el)}>
           <div className="fixit-content-line">
-            <Codify />
+            <FixitProj />
           </div>
         </div>
+        {/* <a href="https://cssplice.github.io/LAS20/proc/SPLICE_2020_LS_paper_2.pdf"> */}
         <video
           ref={videoItem}
           src={fixitVideo}
@@ -83,8 +88,9 @@ export const Fixit = () => {
           playsInline
           disablePictureInPicture
           type="video/mp4"
-          // style={{ border: "2px solid teal" }}
+          style={{ border: "2px solid teal", cursor: "pointer" }}
         />
+        {/* </a> */}
       </div>
     </header>
   );

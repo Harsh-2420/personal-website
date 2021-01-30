@@ -4,15 +4,15 @@ import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 
-export const Dathena = () => {
+export const Codify = () => {
   return (
     <div className="project-container">
-      <div className="project-header">DATHENA</div>
+      <div className="project-header">CODIFY</div>
       <div className="project-desc">
-        Partnered with Scotiabank and U of T to use financial big data for
-        feature selection and predicting ratings. Implemented Principal
-        Component Analysis for dimensionality reduction along with random forest
-        and GAM
+        "An algorithm that can read and grade papers for CS1 courses using CNN
+        and RNN The image recognition model uses CNN to read the handwritten
+        code The RNN integrated with IntelliSense rectifies mistakes made by
+        then CNN"
       </div>
     </div>
   );

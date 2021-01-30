@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Row, Col } from "react-bootstrap";
 import { Codify } from "./Projects/Codify";
 import { Dathena } from "./Projects/Dathena";
+import { Facial } from "./Projects/Facial";
+import { Charlottesville } from "./Projects/Charlottesville";
 
 export const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -13,60 +15,49 @@ export const Projects = () => {
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
-    // gsap.from(".all-proj-title", {
-    //   y: 44,
-    //   duration: 1,
-    //   scrollTrigger: {
-    //     trigger: ".all-proj-title",
-    //     start: "center 600px",
-    //     toggleActions: "play none none none",
-    //   },
-    //   ease: Power3.easeOut,
-    //   opacity: 0,
-    // });
     gsap.from(".project-row-1", {
       y: 24,
-      duration: 1.3,
+      duration: 1.7,
       scrollTrigger: {
         trigger: ".all-proj-title",
         start: "bottom 600px",
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0.3,
+      opacity: 0.1,
     });
     gsap.from(".project-row-2", {
       y: 24,
-      duration: 1.3,
+      duration: 1.7,
       scrollTrigger: {
         trigger: ".project-row-1",
         start: "bottom 600px",
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0.2,
+      opacity: 0.1,
     });
     gsap.from(".side-head-proj", {
       x: 54,
-      duration: 1.3,
+      duration: 1.7,
       scrollTrigger: {
         trigger: ".project-row-1",
         start: "bottom 600px",
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0.2,
+      opacity: 0.1,
     });
     gsap.from(".side-head-proj-2", {
       x: -54,
-      duration: 1.3,
+      duration: 1.7,
       scrollTrigger: {
         trigger: ".project-row-1",
         start: "bottom 600px",
         toggleActions: "play none none none",
       },
       ease: Power3.easeOut,
-      opacity: 0.2,
+      opacity: 0.1,
     });
   }, [tl]);
   return (
@@ -103,10 +94,10 @@ export const Projects = () => {
           </Row>
           <Row className="project-row-2">
             <Col>
-              <Dathena />
+              <Facial />
             </Col>
             <Col>
-              <Dathena />
+              <Charlottesville />
             </Col>
           </Row>
         </div>

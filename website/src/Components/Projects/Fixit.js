@@ -4,15 +4,15 @@ import { gsap, TweenMax, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 
-export const Dathena = () => {
+export const FixitProj = () => {
   return (
     <div className="project-container">
-      <div className="project-header">DATHENA</div>
+      <div className="project-header">Fixit</div>
       <div className="project-desc">
-        Partnered with Scotiabank and U of T to use financial big data for
-        feature selection and predicting ratings. Implemented Principal
-        Component Analysis for dimensionality reduction along with random forest
-        and GAM
+        Published a research paper and developed an ML model on a software that
+        recommends personalized review questions to students based on their past
+        answers. Implemented Collaborative Filtering and A/B Hypothesis testing
+        on CS1 students.
       </div>
     </div>
   );

@@ -19,8 +19,6 @@ div {
 
 body,
 html {
-  /* font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco,
-    "Bitstream Vera Sans Mono", monospace !important; */
   font-family: "HKGrotesk" !important;
   font-weight: 300;
   font-size: 13px;
@@ -182,7 +180,7 @@ html {
   /* width: 40%; */
   /* border: solid 2px magenta; */
   /* left: 40vw; */
-  margin-left: -83vw;
+  margin-left: -90vw;
   /* margin-top: 7%; */
   width: 37%;
   border-radius: 18px;

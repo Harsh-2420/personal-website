@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import { gsap, TweenMax, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
-import { Codify } from "./Projects/Codify";
+import { FindrProj } from "./Projects/Findr";
 
 export const Findr = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +14,9 @@ export const Findr = () => {
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(() => {
+    $(".tutorial_vid").click(function () {
+      window.location = "findrapp.ca";
+    });
     $(window).on("load", function () {
       $(window)
         .scroll(function () {
@@ -89,10 +92,15 @@ export const Findr = () => {
   return (
     <header className="findr">
       <div className="container-findr">
-        <img ref={logoItem} src={findrLogo} className="findrLogo" />
+        <img
+          ref={logoItem}
+          src={findrLogo}
+          className="findrLogo"
+          style={{ cursor: "pointer" }}
+        />
         <div className="findr-content-inner" ref={(el) => (content = el)}>
           <div className="findr-content-line">
-            <Codify />
+            <FindrProj />
           </div>
         </div>
         <div class="side-head">EXPERIENCE</div>
