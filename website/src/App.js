@@ -8,7 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { TweenMax, Power3 } from "gsap";
 
 import { Jumbotron } from "./Components/Jumbo3";
-import { Findr } from "./Components/Findr";
+import { Findr } from "./Components/Findr2";
 import { Fixit } from "./Components/Fixit";
 import { About } from "./Components/About";
 import { Navbar } from "./Components/Navbar";
@@ -24,9 +24,8 @@ function App() {
       <Jumbotron />
       <About />
       <Findr />
-      <Fixit />
+      {/* <Fixit /> */}
       <Projects />
-      {/* <Project /> */}
     </div>
   );
 }

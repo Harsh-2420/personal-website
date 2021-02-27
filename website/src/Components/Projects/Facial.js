@@ -7,7 +7,7 @@ import $ from "jquery";
 export const Facial = () => {
   return (
     <div className="project-container">
-      <div className="project-header">Facial</div>
+      <div className="project-header">Facial Keypoint</div>
       <div className="project-desc">
         Analyzed facial images to predict key points that represent elements of
         the face. Using the results to build facial trackers. Developed the

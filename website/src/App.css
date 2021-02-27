@@ -117,45 +117,50 @@ html {
   /* border: 2px white solid; */
   background-size: cover;
   height: 800px;
-  height: 70vh;
+  height: 90vh;
   position: relative;
 }
 
-.container-findr {
-  display: flex;
+.findr-container {
+  /* display: flex; */
+  /* margin-left: 10vw; */
+  /* width: 80%; */
   position: relative;
   /* border: solid 2px green; */
-  align-items: center;
+  /* align-items: center; */
 }
 
 .findrLogo {
   opacity: 0.8;
-  width: 40%;
+  width: 35%;
+  margin-left: 33vw;
+  /* display: flex; */
   /* border: solid 2px magenta; */
-  margin-left: 30vw;
 }
 .findr-content-line {
   color: white;
-  opacity: 0;
+  opacity: 1;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   font-size: 1.2rem;
-  width: 150%;
-  margin-left: -10vw;
+  width: 60%;
+  /* border: solid 2px magenta; */
+  margin-left: 23vw;
 }
 
 /* CSS on the fixit page*/
 
 .fixit-content-line {
   color: white;
-  opacity: 0;
+  opacity: 1;
   display: flex;
   text-align: center;
-  /* position: absolute; */
   flex-wrap: wrap;
-  width: 40%;
   font-size: 1.2rem;
+  width: 70%;
+  /* border: solid 2px magenta; */
+  margin-left: 10vw;
   /* border: solid 2px teal; */
 }
 
@@ -176,12 +181,6 @@ html {
 }
 
 .fixitVideo {
-  opacity: 0.8;
-  /* width: 40%; */
-  /* border: solid 2px magenta; */
-  /* left: 40vw; */
-  margin-left: -90vw;
-  /* margin-top: 7%; */
   width: 37%;
   border-radius: 18px;
   border-width: 0px;
